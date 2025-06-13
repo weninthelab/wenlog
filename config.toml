@@ -5,7 +5,8 @@
 #
 #=========================================================================================
 
-base_url = "https://example.com"
+base_url = "https://weninthelab.github.io/wenlog/"
+
 title = "WENLOG"
 description = "This is where I collect what I learn and share what I think."
 default_language = "en"

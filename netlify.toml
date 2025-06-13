@@ -1,3 +1,0 @@
-[build]
-  command = "curl -s https://www.getzola.org/install.sh | bash && export PATH=$HOME/.cargo/bin:$PATH && zola build"
-  publish = "public"
