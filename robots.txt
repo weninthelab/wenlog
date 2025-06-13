@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://weninthelab.github.io/wenlog/sitemap.xml
