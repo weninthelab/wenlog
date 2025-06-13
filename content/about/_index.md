@@ -7,7 +7,7 @@ insert_anchor_links = "none"
 [extra]
 lang = "en"
 title = "About Me"
-subtitle = "Tech student from Vietnamese"
+subtitle = "Vietnamese"
 math = false
 mermaid = false
 copy = false
