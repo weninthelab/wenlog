@@ -7,7 +7,7 @@ insert_anchor_links = "none"
 [extra]
 lang = "en"
 title = "About Me"
-subtitle = "Vietnamese"
+subtitle = "Tech student from Viet Nam"
 math = false
 mermaid = false
 copy = false
@@ -16,7 +16,7 @@ reaction = false
 +++
 
 I'm Tong Nguyen Quoc Anh — or just Wen.  
-A curious student into tech.
+A curious student into computer science.
 
 ---
 
