@@ -5,7 +5,7 @@ date = 2025-01-20
 draft = false
 
 [taxonomies]
-categories = ["markdown"]
+categories = ["Miscellaneous"]
 tags = ["markdown"]
 
 [extra]
