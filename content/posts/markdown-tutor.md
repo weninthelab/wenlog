@@ -102,14 +102,16 @@ Inline code:
 Use backticks like \`code\` (`code`)
 
 Code block:
-<pre> ```python
+````markdown
+```python
 def hello(): 
-    print("Hello, Markdown!") 
-``` </pre>
+  print("Hello, Markdown!") 
+```
+````
 
 ```python
 def hello(): 
-    print("Hello, Markdown!") 
+  print("Hello, Markdown!") 
 ```
 
 
@@ -126,7 +128,6 @@ def hello():
 ```markdown
 ---
 ```
-
 ---
 
 # Tables
