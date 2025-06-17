@@ -5,7 +5,7 @@ template = 'home.html'
 lang = 'en'
 
 # Show footer in home page
-footer = true
+footer = false
 
 # If you don't want to display id/bio/avatar, simply comment out that line
 name = "WENLOG"
@@ -15,7 +15,6 @@ avatar = "img/y.ico"
 links = [
     { name = "Facebook", icon = "facebook", url = "https://www.facebook.com/weninthelab"},
     { name = "LinkedIn", icon = "linkedin", url = "https://www.linkedin.com/in/sowenn"},
-    { name = "GitHub", icon = "github", url = "https://github.com/weninthelab" },
     { name = "Email", icon = "email", url = "mailto:weninthelab@gmail.com" }
 ]
 
