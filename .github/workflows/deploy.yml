@@ -1,14 +1,36 @@
-on: push
-name: Build and deploy GH Pages
+# on: push
+# name: Build and deploy GH Pages
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     if: github.ref == 'refs/heads/main'
+#     steps:
+#       - name: checkout
+#         uses: actions/checkout@v4
+#       - name: build_and_deploy
+#         uses: shalzz/zola-deploy-action@master
+#         env:
+#           PAGES_BRANCH: gh-pages
+#           TOKEN: ${{ secrets.GITHUB_TOKEN }}
+name: Build and Deploy to Public Repo
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+
     steps:
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v4
-      - name: build_and_deploy
+
+      - name: Build and Deploy to Another Repo
         uses: shalzz/zola-deploy-action@master
         env:
-          PAGES_BRANCH: gh-pages
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOKEN: ${{ secrets.TARGET_REPO_TOKEN }}  
+          REPO: weninthelab/wenlogging          
+          BRANCH: main                            
+          BUILD_DIR: public                        
