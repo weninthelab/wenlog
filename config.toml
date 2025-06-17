@@ -21,7 +21,7 @@ taxonomies = [{ name = "tags" }, { name = "categories" }]
 
 [markdown]
 highlight_code = true
-highlight_theme = "css"
+highlight_theme = "zenburn"
 extra_syntaxes_and_themes = ["themes/serene/highlight_themes"]
 highlight_themes_css = [
   { theme = "serene-light", filename = "hl-light.css" },
