@@ -34,4 +34,3 @@ jobs:
           TOKEN: ${{ secrets.TARGET_REPO_TOKEN }}  # Personal Access Token
           REPO: weninthelab/wenlogging             # Repo public bạn muốn deploy
           BRANCH: main                             # Nhánh bạn muốn push lên (main/gh-pages)
-                  
