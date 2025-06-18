@@ -1,5 +1,5 @@
 +++
-title = "Posts"
+title = "Posts | WENLOG"
 description = "My blog site."
 sort_by = "date"
 template = "blog.html"
@@ -11,9 +11,9 @@ generate_feeds = false
 lang = "en"
 
 title = "Posts"
-subtitle = ""
+subtitle = "Half notes, half nonsense"
 
-date_format = "%-d %b, %Y"
+date_format = "%h %-d, %Y"
 
 categorized = false # posts can be categorized
 back_to_top = true # show back-to-top button

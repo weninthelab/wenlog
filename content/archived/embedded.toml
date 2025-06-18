@@ -1,0 +1,28 @@
+[[collection]]
+type = "card"
+title = "5 Superman GAO"
+content = "unzip pass: ctfhuflit.com Flag: HUFLIT{gao1,gao2,gao3,gao4,gao5}"
+link = "https://example.com"
+tags = ["reverse engineering", "ctf write-up"]
+
+[[collection]]
+type = "card"
+title = "ASCIS 2023 Quals: Conti"
+content = "Source: ASCIS | USE VM INSTEAD"
+link = "https://example.com"
+tags = ["reverse engineering", "ctf write-up"]
+
+[[collection]]
+type = "card"
+title = "ASCIS 2023 Quals: Sanryu"
+content = "Source: ASCIS | password: notinfected"
+link = "https://example.com"
+tags = ["reverse engineering", "ctf write-up"]
+
+[[collection]]
+type = "card"
+title = "Rebinding"
+content = "Link redirect: http://103.160.3.114:9000/login"
+link = "https://example.com"
+tags = ["web security", "ctf write-up"]
+
