@@ -8,7 +8,7 @@ title = "Collections"
 subtitle = "Discover and explore content organized by topics, categories, and timeline"
 +++
 
-[**Tags**](/tags) . [**Categories**](/categories) . [**Archived**](/archived)  
+[**Tags**](/wenlog/tags) . [**Categories**](/wenlog/categories) . [**Archived**](/wenlog/archived)  
 
 ---
 
