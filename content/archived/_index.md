@@ -9,7 +9,7 @@ subtitle = "Some things get older. Some just get more interesting."
 +++
 
 ## CTF HUFLIT Write-ups
-Write-ups for some challenges from CTF HUFLIT  
+Write-ups for challenges from CTF HUFLIT  
 {{ collection(file="ctf-huflit.toml") }}
 
 ---
