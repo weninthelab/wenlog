@@ -97,7 +97,8 @@
         {% endfor %}
       </div>
       <div class="read-more">
-        <a class="instant" href="{{ config.extra.blog_section_path }}">{{ section.extra.recent_more_text }}</a>
+        <a class="instant" href="{{ get_url(path='posts') }}">{{ section.extra.recent_more_text }}</a>
+        <!-- <a class="instant" href="{{ config.extra.blog_section_path }}">{{ section.extra.recent_more_text }}</a> -->
       </div>
     </section>
   {% endif %}
