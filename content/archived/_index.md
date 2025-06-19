@@ -14,4 +14,10 @@ Write-ups for challenges from CTF HUFLIT
 
 ---
 
+## JavaScript's Weird and Confusing Behaviors
+Some of the most confusing and weird behaviors in JavaScript
+{{ collection(file="js-weird-behaviors.toml") }}
+
+---
+
 ***If you can't explain it simply, you don't understand it well enough.***
