@@ -6,7 +6,7 @@ draft = false
 
 [taxonomies]
 categories = ["Miscellaneous"]
-tags = ["markdown"]
+tags = ["Markdown"]
 
 [extra]
 lang = "en"

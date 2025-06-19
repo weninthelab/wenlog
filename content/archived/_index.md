@@ -5,20 +5,12 @@ template = "archived.html"
 
 [extra]
 title = "Archived"
-subtitle = "Some of my archived posts"
+subtitle = "Some things get older. Some just get more interesting."
 +++
 
 ## CTF HUFLIT Write-ups
-Write-ups for all challenges from the HUFLIT CTF competition.  
-{{ collection(file="ctfhuflit.toml") }}
-
-## Embedded Systems Notes
-Notes and small projects related to bare-metal and embedded development.  
-{{ collection(file="embedded.toml") }}
-
-## Tools & Tips
-A curated list of CLI tools, Linux utilities, and productivity scripts.  
-{{ collection(file="tools.toml") }}
+Write-ups for some challenges from CTF HUFLIT  
+{{ collection(file="ctf-huflit.toml") }}
 
 ---
 

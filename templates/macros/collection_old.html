@@ -22,7 +22,7 @@
   {% if item.tags %}
   <div class="tags">
     {% for tag in item.tags %}
-    <div><span class="hash">#</span>{{ tag }}</div>
+    <div><span>#</span>{{ tag }}</div>
     {% endfor %}
   </div>
   {% endif %}
@@ -82,7 +82,6 @@
 {% endmacro %}
 
 
-
 {% macro box(item) %}
 <div class="collection-box-wrapper">
   {% if item.link %}
@@ -92,13 +91,7 @@
       {% endif %}
       <div class="text">
         <div class="title">{{ item.title }}</div>
-        {% if item.tags %}
-        <div class="subtitle">
-          {% for tag in item.tags %}
-          <span><span class="hash">#</span>{{ tag }}</span>{% if not loop.last %} {% endif %}
-          {% endfor %}
-        </div>
-        {% elif item.subtitle %}
+        {% if item.subtitle %}
         <div class="subtitle">{{ item.subtitle }}</div>
         {% endif %}
       </div>
@@ -115,7 +108,6 @@
   {% endif %}
 </div>
 {% endmacro %}
-
 
 
 {% macro art(item) %}
