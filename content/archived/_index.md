@@ -1,6 +1,6 @@
 +++
-title = "Archived | WENLOG"
-description = "Archived page of WenLog"
+title = "Archived | WenVN"
+description = "Archived page of WenVN"
 template = "archived.html"
 
 [extra]

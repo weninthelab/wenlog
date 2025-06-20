@@ -1,5 +1,5 @@
 +++
-title = "Posts | WENLOG"
+title = "Posts | WenVN"
 description = "My blog site."
 sort_by = "date"
 template = "blog.html"

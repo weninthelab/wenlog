@@ -1,6 +1,6 @@
 +++
-title = "About | wenvn"
-description = "About page of wenvn"
+title = "About | WenVN"
+description = "About page of WenVN"
 template = "prose.html"
 insert_anchor_links = "none"
 

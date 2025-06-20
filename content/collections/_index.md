@@ -1,5 +1,5 @@
 +++
-title = "Collections | WENVN"
+title = "Collections | WenVN"
 description = "Explore organized content collections and discover articles by topics, categories, and timeline"
 template = "prose.html"
 
