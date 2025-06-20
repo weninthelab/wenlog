@@ -1,50 +1,48 @@
 [[collection]]
 type = "box"
-title = "JavaScript's Type Coercion Madness: When Numbers Become Strings and Logic Goes Wild"
+title = "JavaScript Type Coercion Madness"
 category = ["JavaScript", "Web Development"]
 tags = ["JavaScript", "Type Coercion", "JS Weird Behaviors", "Programming"]
-link = "https://wenvn.github.io/posts/js-type-coercion-madness/" # optional
+link = "https://wenvn.github.io/posts/js-type-coercion-madness/"
 
 [[collection]]
 type = "box"
-title = "JavaScript's `this` Keyword: A Journey into Its Mysterious World"
+title = "The Mysterious `this` in JavaScript"
 category = ["JavaScript", "Web Development"]
 tags = ["JavaScript", "Keyword 'this'", "JS Weird Behaviors", "Programming"]
-link = "https://wenvn.github.io/posts/js-this-keyword-confusion/" # optional
+link = "https://wenvn.github.io/posts/js-this-keyword-confusion/"
 
 [[collection]]
 type = "box"
-title = "JavaScript Hoisting and the Temporal Dead Zone: When Variables Exist But Don't"
+title = "Hoisting & the Temporal Dead Zone"
 category = ["JavaScript", "Web Development"]
 tags = ["JavaScript", "Temporal Dead Zone", "JS Weird Behaviors", "Programming"]
-link = "https://wenvn.github.io/posts/js-hoisting-temporal-dead-zone/" # optional
+link = "https://wenvn.github.io/posts/js-hoisting-temporal-dead-zone/"
 
 [[collection]]
 type = "box"
-title = "JavaScript Closure Confusion and Memory Mysteries"
+title = "Closures & Memory Mysteries"
 category = ["JavaScript", "Web Development"]
 tags = ["JavaScript", "Closures", "JS Weird Behaviors", "Programming"]
-link = "https://wenvn.github.io/posts/js-closure-memory-mysteries/" # optional
+link = "https://wenvn.github.io/posts/js-closure-memory-mysteries/"
 
 [[collection]]
 type = "box"
-title = "JavaScript Prototype Chain Peculiarities: When Objects Behave Unexpectedly"
+title = "Prototype Chain Peculiarities"
 category = ["JavaScript", "Web Development"]
 tags = ["JavaScript", "Prototypes", "OOP", "JS Weird Behaviors", "Programming"]
-link = "https://wenvn.github.io/posts/js-prototype-chain-peculiarities/" # optional
+link = "https://wenvn.github.io/posts/js-prototype-chain-peculiarities/"
 
 [[collection]]
 type = "box"
-title = "JavaScript Asynchronous Chaos: When Order Becomes Disorder"
+title = "Asynchronous Chaos in JavaScript"
 category = ["JavaScript", "Web Development"]
 tags = ["JavaScript", "Async", "Promises", "JS Weird Behaviors", "Programming"]
-link = "https://wenvn.github.io/posts/js-asynchronous-chaos/" # optional
+link = "https://wenvn.github.io/posts/js-asynchronous-chaos/"
 
 [[collection]]
 type = "box"
-title = "JavaScript Equality and Comparison Weirdness: When Equal Doesn't Mean Equal"
+title = "Equality & Comparison Weirdness"
 category = ["JavaScript", "Web Development"]
 tags = ["JavaScript", "Operators", "JS Weird Behaviors", "Programming"]
-link = "https://wenvn.github.io/posts/js-equality-comparison-weirdness/" # optional
-
-
+link = "https://wenvn.github.io/posts/js-equality-comparison-weirdness/"

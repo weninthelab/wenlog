@@ -5,7 +5,7 @@ date = 2025-06-04
 draft = false
 
 [taxonomies]
-categories = ["JavaScript"]
+categories = ["JavaScript", "Web Development"]
 tags = ["JavaScript", "Keyword `this`", "JS Weird Behaviors", "Programming"]
 
 [extra]
