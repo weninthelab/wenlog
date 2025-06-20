@@ -1,7 +1,7 @@
 +++
 title = "JavaScript Equality and Comparison Weirdness: When Equal Doesn't Mean Equal"
 description = "Discover the bizarre world of JavaScript equality operators and comparison logic that can make experienced developers question reality"
-date = 2025-06-20
+date = 2025-06-13
 draft = false
 
 [taxonomies]

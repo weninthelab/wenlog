@@ -1,7 +1,7 @@
 +++
 title = "The Mysterious World of JavaScript's `this` Keyword"
 description = "Unravel the complexities of JavaScript's `this` binding with examples that demonstrate its unpredictable behavior in different contexts"
-date = 2025-06-20
+date = 2025-06-04
 draft = false
 
 [taxonomies]

@@ -20,4 +20,4 @@ Some of the most confusing and weird behaviors in JavaScript
 
 ---
 
-***If you can't explain it simply, you don't understand it well enough.***
+*If you can't explain it simply, you don't understand it well enough.*

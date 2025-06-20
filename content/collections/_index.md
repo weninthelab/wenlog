@@ -12,4 +12,4 @@ subtitle = "Discover and explore content organized by topics, categories, and ti
 
 ---
 
-***The true sign of intelligence is not knowledge but imagination.***
+*The true sign of intelligence is not knowledge but imagination.*

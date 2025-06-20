@@ -26,4 +26,4 @@ Just a student, curious about computers.
 
 ---
 
-***Appreciate your visit. Stay curious, keep exploring.***
+*Appreciate your visit. Stay curious, keep exploring.*

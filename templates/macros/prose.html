@@ -1,7 +1,17 @@
-{% macro back_link(path) %}
+<!-- {% macro back_link(path) %}
 <header>
   <nav>
     <a href="{{ path }}">← {{ config.extra.back_link_text }}</a>
+  </nav>
+</header>
+{% endmacro %} -->
+{% macro back_link(path="javascript:void(0)") %}
+<header>
+  <nav>
+    <a href="#" onclick="if(document.referrer){history.back();}else{window.location.href='{{ path }}'}"
+      class="back-link">
+      ← {{ config.extra.back_link_text }}
+    </a>
   </nav>
 </header>
 {% endmacro %}

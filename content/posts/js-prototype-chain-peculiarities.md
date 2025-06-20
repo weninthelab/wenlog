@@ -1,7 +1,7 @@
 +++
 title = "JavaScript Prototype Chain Peculiarities: When Objects Behave Unexpectedly"
 description = "Explore the strange world of JavaScript prototypes and inheritance with examples that showcase unexpected behaviors"
-date = 2025-06-20
+date = 2025-06-09
 draft = false
 
 [taxonomies]
