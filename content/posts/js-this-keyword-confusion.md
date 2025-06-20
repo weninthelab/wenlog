@@ -1,12 +1,12 @@
 +++
-title = "The Mysterious World of JavaScript's `this` Keyword"
+title = "JavaScript's `this` Keyword: A Journey into Its Mysterious World"
 description = "Unravel the complexities of JavaScript's `this` binding with examples that demonstrate its unpredictable behavior in different contexts"
 date = 2025-06-04
 draft = false
 
 [taxonomies]
-categories = ["JavaScript", "Web Development"]
-tags = ["JavaScript", "Keyword 'this'", "JS Weird Behaviors", "Programming"]
+categories = ["JavaScript"]
+tags = ["JavaScript", "Keyword `this`", "JS Weird Behaviors", "Programming"]
 
 [extra]
 lang = "en"

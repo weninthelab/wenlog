@@ -7,7 +7,7 @@ link = "https://wenvn.github.io/posts/js-type-coercion-madness/" # optional
 
 [[collection]]
 type = "box"
-title = "The Mysterious World of JavaScript's `this` Keyword"
+title = "JavaScript's `this` Keyword: A Journey into Its Mysterious World"
 category = ["JavaScript", "Web Development"]
 tags = ["JavaScript", "Keyword 'this'", "JS Weird Behaviors", "Programming"]
 link = "https://wenvn.github.io/posts/js-this-keyword-confusion/" # optional
