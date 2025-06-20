@@ -1,0 +1,49 @@
+/* GitHub Light Theme */
+.z-code {
+    color: #24292e;
+    background-color: #f6f8fa;
+}
+
+.z-comment {
+    color: #6a737d;
+}
+
+.z-keyword,
+.z-storage {
+    color: #d73a49;
+}
+
+.z-constant {
+    color: #005cc5;
+}
+
+.z-string,
+.z-meta-string {
+    color: #032f62;
+}
+
+.z-variable {
+    color: #e36209;
+}
+
+.z-entity.z-name.z-function {
+    color: #6f42c1;
+}
+
+.z-entity.z-name.z-tag {
+    color: #22863a;
+}
+
+.z-entity.z-other.z-attribute-name {
+    color: #005cc5;
+}
+
+.z-invalid {
+    background-color: #fdd;
+    color: #cb2431;
+}
+
+.z-markup.z-heading {
+    color: #24292e;
+    font-weight: bold;
+}

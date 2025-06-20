@@ -1,0 +1,63 @@
+[[collection]]
+type = "box"
+title = "Cat"
+category = "CTF"
+tags = ["Forensics", "CTFHUFLIT"]
+link = "https://example.com" # optional
+
+[[collection]]
+type = "box"
+title = "Carr"
+category = "CTF"
+tags = ["Forensics", "CTFHUFLIT"]
+link = "https://example.com" # optional
+
+[[collection]]
+type = "box"
+title = "Date of birth?"
+category = "CTF"
+tags = ["Forensics", "CTFHUFLIT"]
+link = "https://example.com" # optional
+
+[[collection]]
+type = "box"
+title = "Who visited?"
+category = "CTF"
+tags = ["Forensics", "CTFHUFLIT"]
+link = "https://example.com" # optional
+
+[[collection]]
+type = "box"
+title = "ASCIS 2023 Quals: For 2"
+category = "CTF"
+tags = ["Forensics", "CTFHUFLIT"]
+link = "https://example.com" # optional
+
+[[collection]]
+type = "box"
+title = "Riverside"
+category = "CTF"
+tags = ["Forensics", "CTFHUFLIT"]
+link = "https://example.com" # optional
+
+[[collection]]
+type = "box"
+title = "5 Superman GAO"
+category = "CTF"
+tags = ["Reversing", "CTFHUFLIT"]
+link = "https://example.com" # optional
+
+[[collection]]
+type = "box"
+title = "ASCIS 2023 Quals: Conti"
+category = "CTF"
+tags = ["Reversing", "CTFHUFLIT"]
+link = "https://example.com" # optional
+
+[[collection]]
+type = "box"
+title = "ASCIS 2023 Quals: Sanryu"
+category = "CTF"
+tags = ["Reversing", "CTFHUFLIT"]
+link = "https://example.com" # optional
+

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  
+<meta name="description" content="This is where I collect what I learn and share what I think.">
+
+  <title>WenVN</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://wenvn.github.io/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://wenvn.github.io/img/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://wenvn.github.io/img/apple-touch-icon.png">
+  
+  <style>
+  /* light mode colors */
+  body {
+    --primary-color: #5871a2;
+    --primary-pale-color: #5871a233;
+    --primary-decoration-color: #5871a210;
+    --bg-color: #ffffff;
+    --text-color: #2f3030;
+    --text-pale-color: #767676;
+    --text-decoration-color: #a9a9a9;
+    --highlight-mark-color: #5f75b020;
+
+    --callout-note-color: #5871a2;
+    --callout-tip-color: #268556;
+    --callout-important-color: #885fc9;
+    --callout-warning-color: #ab6632;
+    --callout-caution-color: #c64e4e;
+  }
+
+  /* dark mode colors */
+  body.dark {
+    --primary-color: #6f8fd1;
+    --primary-pale-color: #6f8fd166;
+    --primary-decoration-color: #6f8fd112;
+    --bg-color: #1c1c1c;
+    --text-color: #c1c1c1;
+    --text-pale-color: #848484;
+    --text-decoration-color: #5f5f5f;
+    --highlight-mark-color: #8296cb3b;
+
+    --callout-note-color: #6f8fd1;
+    --callout-tip-color: #47976f;
+    --callout-important-color: #9776cd;
+    --callout-warning-color: #ad7a52;
+    --callout-caution-color: #d06161;
+  }
+
+  /* typography */
+  body {
+    --main-font: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --code-font: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    --homepage-max-width: 768px;
+    --main-max-width: 768px;
+    --avatar-size: 60px;
+    --font-size: 16px;
+    --line-height: 1.75;
+    --img-border-radius: 0px;
+    --detail-border-radius: 0px;
+    --dark-mode-img-brightness: 0.75;
+    --dark-mode-chart-brightness: 0.75;
+    --inline-code-border-radius: 2px;
+    --inline-code-bg-color: var(--primary-decoration-color);
+    --block-code-border-radius: 0px;
+    --block-code-border-color: var(--primary-color);
+    --detail-border-color: var(--primary-color);
+  }
+
+  /* Beautify task list checkbox */
+  li input[type="checkbox"] {
+    appearance: none;
+    width: 1.1em;
+    height: 1.1em;
+    margin-right: 0.6em;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+
+  /* Checkbox tick (checked state) */
+  li input[type="checkbox"]:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+
+  li input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    left: 0.28em;
+    top: 0.05em;
+    width: 0.3em;
+    height: 0.6em;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  pre code {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+</style>
+  <link rel="stylesheet" href="https://wenvn.github.io/main.css">
+  
+
+
+
+  
+</head>
+
+<body class="homepage">
+  
+  <script>
+    const theme = sessionStorage.getItem('theme');
+    const match = window.matchMedia("(prefers-color-scheme: dark)").matches
+    if ((theme && theme == 'dark') || (!theme && match)) {
+      document.body.classList.add('dark');
+      const hl = document.querySelector('link#hl');
+      if (hl) hl.href = 'https://wenvn.github.io/hl-dark.css';
+    }
+  </script>
+  
+  
+<div id="wrapper">
+  <main>
+    <section id="info">
+      
+      <img src="https://wenvn.github.io/img/y.ico" alt="avatar">
+      
+      <div id="text">
+        <div>
+          <span id="name">WenVN</span>
+          
+          <span id="id">@Wen</span>
+          
+        </div>
+        
+      </div>
+    </section>
+    <section id="links">
+      <div id="left">
+        
+        <a href="https://wenvn.github.io/posts" class="instant" >Posts</a>
+        
+        <a href="https://wenvn.github.io/collections" class="instant" >Collections</a>
+        
+        <a href="https://wenvn.github.io/about" class="instant" >About</a>
+        
+      </div>
+      <div id="right">
+        
+        <a href="https:&#x2F;&#x2F;www.facebook.com&#x2F;weninthelab" aria-label="Facebook" target="_blank" rel='noreferrer noopener'>
+          
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M14 19H19V5H5V19H12V14H10V12H12V10.3458C12 9.00855 12.1392 8.52362 12.4007 8.03473C12.6622 7.54584 13.0458 7.16216 13.5347 6.9007C13.9174 6.69604 14.3922 6.57252 15.2217 6.51954C15.551 6.49851 15.9771 6.52533 16.5 6.6V8.5H16C15.0827 8.5 14.7042 8.54332 14.4779 8.66433C14.3376 8.73939 14.2394 8.83758 14.1643 8.97793C14.0433 9.20418 14 9.42853 14 10.3458V12H16.5L16 14H14V19ZM4 3H20C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3Z"></path></svg>
+
+        </a>
+        
+        <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;sowenn" aria-label="LinkedIn" target="_blank" rel='noreferrer noopener'>
+          
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.00098 3H20.001C20.5533 3 21.001 3.44772 21.001 4V20C21.001 20.5523 20.5533 21 20.001 21H4.00098C3.44869 21 3.00098 20.5523 3.00098 20V4C3.00098 3.44772 3.44869 3 4.00098 3ZM5.00098 5V19H19.001V5H5.00098ZM7.50098 9C6.67255 9 6.00098 8.32843 6.00098 7.5C6.00098 6.67157 6.67255 6 7.50098 6C8.3294 6 9.00098 6.67157 9.00098 7.5C9.00098 8.32843 8.3294 9 7.50098 9ZM6.50098 10H8.50098V17.5H6.50098V10ZM12.001 10.4295C12.5854 9.86534 13.2665 9.5 14.001 9.5C16.072 9.5 17.501 11.1789 17.501 13.25V17.5H15.501V13.25C15.501 12.2835 14.7175 11.5 13.751 11.5C12.7845 11.5 12.001 12.2835 12.001 13.25V17.5H10.001V10H12.001V10.4295Z"></path></svg>
+
+        </a>
+        
+        <a href="mailto:weninthelab@gmail.com" aria-label="Email" target="_blank" rel='noreferrer noopener'>
+          
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z" fill="currentColor"></path></svg>
+
+        </a>
+        
+        
+        
+        
+        <button id="theme-toggle" aria-label="theme switch">
+          <span class="moon-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M10 7C10 10.866 13.134 14 17 14C18.9584 14 20.729 13.1957 21.9995 11.8995C22 11.933 22 11.9665 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C12.0335 2 12.067 2 12.1005 2.00049C10.8043 3.27098 10 5.04157 10 7ZM4 12C4 16.4183 7.58172 20 12 20C15.0583 20 17.7158 18.2839 19.062 15.7621C18.3945 15.9187 17.7035 16 17 16C12.0294 16 8 11.9706 8 7C8 6.29648 8.08133 5.60547 8.2379 4.938C5.71611 6.28423 4 8.9417 4 12Z" fill="currentColor"></path></svg>
+</span>
+          <span class="sun-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z" fill="currentColor"></path></svg>
+</span>
+        </button>
+        
+      </div>
+    </section>
+    <section id="brief" class="prose">
+      <p>Hi there 👋<br />
+This is where I collect what I learn and share what I think.</p>
+<hr />
+    </section>
+    
+    
+    
+    
+    <section class="layout-list">
+      <div class="post-list">
+        
+        <a class="post instant " href="https:&#x2F;&#x2F;wenvn.github.io&#x2F;posts&#x2F;js-equality-comparison-weirdness&#x2F;">
+          <span>Equality &amp; Comparison Weirdness</span>
+          <span class="line"></span>
+          <span class="date">Jun 13, 2025</span>
+        </a>
+        
+        <a class="post instant " href="https:&#x2F;&#x2F;wenvn.github.io&#x2F;posts&#x2F;js-asynchronous-chaos&#x2F;">
+          <span>Asynchronous Chaos in JavaScript</span>
+          <span class="line"></span>
+          <span class="date">Jun 11, 2025</span>
+        </a>
+        
+        <a class="post instant " href="https:&#x2F;&#x2F;wenvn.github.io&#x2F;posts&#x2F;js-prototype-chain-peculiarities&#x2F;">
+          <span>Prototype Chain Peculiarities</span>
+          <span class="line"></span>
+          <span class="date">Jun 09, 2025</span>
+        </a>
+        
+      </div>
+      <div class="read-more">
+        <a class="instant" href="https://wenvn.github.io/posts">more »</a>
+        <!-- <a class="instant" href="&#x2F;posts">more »</a> -->
+      </div>
+    </section>
+    
+  </main>
+  
+</div>
+
+  
+<script src="https://wenvn.github.io/js/lightense.min.js"></script>
+
+
+  <script src="https://wenvn.github.io/js/main.js"></script>
+</body>
+
+</html>

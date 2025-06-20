@@ -1,0 +1,48 @@
+[[collection]]
+type = "box"
+title = "JavaScript Type Coercion Madness"
+category = ["JavaScript", "Web Development"]
+tags = ["JavaScript", "Type Coercion", "JS Weird Behaviors", "Programming"]
+link = "https://wenvn.github.io/posts/js-type-coercion-madness/"
+
+[[collection]]
+type = "box"
+title = "The Mysterious `this` in JavaScript"
+category = ["JavaScript", "Web Development"]
+tags = ["JavaScript", "Keyword 'this'", "JS Weird Behaviors", "Programming"]
+link = "https://wenvn.github.io/posts/js-this-keyword-confusion/"
+
+[[collection]]
+type = "box"
+title = "Hoisting & the Temporal Dead Zone"
+category = ["JavaScript", "Web Development"]
+tags = ["JavaScript", "Temporal Dead Zone", "JS Weird Behaviors", "Programming"]
+link = "https://wenvn.github.io/posts/js-hoisting-temporal-dead-zone/"
+
+[[collection]]
+type = "box"
+title = "Closures & Memory Mysteries"
+category = ["JavaScript", "Web Development"]
+tags = ["JavaScript", "Closures", "JS Weird Behaviors", "Programming"]
+link = "https://wenvn.github.io/posts/js-closure-memory-mysteries/"
+
+[[collection]]
+type = "box"
+title = "Prototype Chain Peculiarities"
+category = ["JavaScript", "Web Development"]
+tags = ["JavaScript", "Prototypes", "OOP", "JS Weird Behaviors", "Programming"]
+link = "https://wenvn.github.io/posts/js-prototype-chain-peculiarities/"
+
+[[collection]]
+type = "box"
+title = "Asynchronous Chaos in JavaScript"
+category = ["JavaScript", "Web Development"]
+tags = ["JavaScript", "Async", "Promises", "JS Weird Behaviors", "Programming"]
+link = "https://wenvn.github.io/posts/js-asynchronous-chaos/"
+
+[[collection]]
+type = "box"
+title = "Equality & Comparison Weirdness"
+category = ["JavaScript", "Web Development"]
+tags = ["JavaScript", "Operators", "JS Weird Behaviors", "Programming"]
+link = "https://wenvn.github.io/posts/js-equality-comparison-weirdness/"

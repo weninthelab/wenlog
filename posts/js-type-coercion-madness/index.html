@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  
+  
+    
+  
+  <meta name="description" content="Explore the bizarre world of JavaScript type coercion with mind-bending examples that will make you question everything you know about data types">
+
+  <title>JavaScript Type Coercion Madness</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://wenvn.github.io/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://wenvn.github.io/img/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://wenvn.github.io/img/apple-touch-icon.png">
+  
+  <style>
+  /* light mode colors */
+  body {
+    --primary-color: #5871a2;
+    --primary-pale-color: #5871a233;
+    --primary-decoration-color: #5871a210;
+    --bg-color: #ffffff;
+    --text-color: #2f3030;
+    --text-pale-color: #767676;
+    --text-decoration-color: #a9a9a9;
+    --highlight-mark-color: #5f75b020;
+
+    --callout-note-color: #5871a2;
+    --callout-tip-color: #268556;
+    --callout-important-color: #885fc9;
+    --callout-warning-color: #ab6632;
+    --callout-caution-color: #c64e4e;
+  }
+
+  /* dark mode colors */
+  body.dark {
+    --primary-color: #6f8fd1;
+    --primary-pale-color: #6f8fd166;
+    --primary-decoration-color: #6f8fd112;
+    --bg-color: #1c1c1c;
+    --text-color: #c1c1c1;
+    --text-pale-color: #848484;
+    --text-decoration-color: #5f5f5f;
+    --highlight-mark-color: #8296cb3b;
+
+    --callout-note-color: #6f8fd1;
+    --callout-tip-color: #47976f;
+    --callout-important-color: #9776cd;
+    --callout-warning-color: #ad7a52;
+    --callout-caution-color: #d06161;
+  }
+
+  /* typography */
+  body {
+    --main-font: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --code-font: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    --homepage-max-width: 768px;
+    --main-max-width: 768px;
+    --avatar-size: 60px;
+    --font-size: 16px;
+    --line-height: 1.75;
+    --img-border-radius: 0px;
+    --detail-border-radius: 0px;
+    --dark-mode-img-brightness: 0.75;
+    --dark-mode-chart-brightness: 0.75;
+    --inline-code-border-radius: 2px;
+    --inline-code-bg-color: var(--primary-decoration-color);
+    --block-code-border-radius: 0px;
+    --block-code-border-color: var(--primary-color);
+    --detail-border-color: var(--primary-color);
+  }
+
+  /* Beautify task list checkbox */
+  li input[type="checkbox"] {
+    appearance: none;
+    width: 1.1em;
+    height: 1.1em;
+    margin-right: 0.6em;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+
+  /* Checkbox tick (checked state) */
+  li input[type="checkbox"]:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+
+  li input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    left: 0.28em;
+    top: 0.05em;
+    width: 0.3em;
+    height: 0.6em;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  pre code {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+</style>
+  <link rel="stylesheet" href="https://wenvn.github.io/main.css">
+  
+
+
+
+  
+</head>
+
+<body class="post">
+  
+  <script>
+    const theme = sessionStorage.getItem('theme');
+    const match = window.matchMedia("(prefers-color-scheme: dark)").matches
+    if ((theme && theme == 'dark') || (!theme && match)) {
+      document.body.classList.add('dark');
+      const hl = document.querySelector('link#hl');
+      if (hl) hl.href = 'https://wenvn.github.io/hl-dark.css';
+    }
+  </script>
+  
+  
+<div id="wrapper">
+  <div id="blank"></div>
+  <aside>
+    
+    
+    <nav>
+      <ul>
+        
+        <li>
+          <a class="h2" href="#the-classic-mystery">The Classic [] + [] Mystery</a>
+          
+        </li>
+        
+        <li>
+          <a class="h2" href="#the-infamous-0-1-0-2-0-3">The Infamous 0.1 + 0.2 !== 0.3</a>
+          
+        </li>
+        
+        <li>
+          <a class="h2" href="#truthiness-gone-wrong">Truthiness Gone Wrong</a>
+          
+        </li>
+        
+        <li>
+          <a class="h2" href="#the-typeof-null-anomaly">The typeof null Anomaly</a>
+          
+        </li>
+        
+        <li>
+          <a class="h2" href="#converting-everything-to-numbers">Converting Everything to Numbers</a>
+          
+        </li>
+        
+      </ul>
+    </nav>
+    
+    
+    <button id="back-to-top" aria-label="back to top">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+
+    </button>
+    
+  </aside>
+  <main>
+    
+<header>
+  <nav>
+    <a href="#" onclick="if(document.referrer){history.back();}else{window.location.href='&#x2F;'}"
+      class="back-link">
+      ← Back
+    </a>
+  </nav>
+</header>
+
+
+    <div>
+      
+      
+      
+      
+      <div id="copy-cfg" style="display: none;" data-copy-icon="&lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;18&quot; height=&quot;18&quot;&gt;&lt;path d=&quot;M6.9998 6V3C6.9998 2.44772 7.44752 2 7.9998 2H19.9998C20.5521 2 20.9998 2.44772 20.9998 3V17C20.9998 17.5523 20.5521 18 19.9998 18H16.9998V20.9991C16.9998 21.5519 16.5499 22 15.993 22H4.00666C3.45059 22 3 21.5554 3 20.9991L3.0026 7.00087C3.0027 6.44811 3.45264 6 4.00942 6H6.9998ZM5.00242 8L5.00019 20H14.9998V8H5.00242ZM8.9998 6H16.9998V16H18.9998V4H8.9998V6Z&quot; fill=&quot;currentColor&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;
+" data-check-icon="&lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;18&quot; height=&quot;18&quot;&gt;&lt;path d=&quot;M10.0007 15.1709L19.1931 5.97852L20.6073 7.39273L10.0007 17.9993L3.63672 11.6354L5.05093 10.2212L10.0007 15.1709Z&quot; fill=&quot;currentColor&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;
+"></div>
+      
+      <article class="prose">
+        <h1>JavaScript Type Coercion Madness</h1>
+        <div id="post-info">
+          <div id="date">
+            <span id="publish">Jun 02, 2025</span>
+            </div>
+
+          
+          <div id="tags">
+            <a class="instant" href="https://wenvn.github.io//tags/javascript"><span>#</span>JavaScript</a><a class="instant" href="https://wenvn.github.io//tags/type-coercion"><span>#</span>Type Coercion</a><a class="instant" href="https://wenvn.github.io//tags/js-weird-behaviors"><span>#</span>JS Weird Behaviors</a><a class="instant" href="https://wenvn.github.io//tags/programming"><span>#</span>Programming</a>
+          </div>
+          
+        </div>
+
+        
+        
+
+        
+
+        <p>JavaScript's type coercion is one of the most confusing aspects of the language. Let's dive into some examples that will blow your mind.</p>
+<h2 id="the-classic-mystery">The Classic <code>[] + []</code> Mystery<a class="zola-anchor" href="#the-classic-mystery" aria-label="Anchor link for: the-classic-mystery" style="visibility: hidden;"></a>
+</h2>
+<pre data-lang="javascript" style="background-color:#151515;color:#e8e8d3;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span>[] + [] </span><span style="color:#888888;">// &quot;&quot;
+</span><span>[] + {} </span><span style="color:#888888;">// &quot;[object Object]&quot;
+</span><span>{} + [] </span><span style="color:#888888;">// 0
+</span><span>{} + {} </span><span style="color:#888888;">// &quot;[object Object][object Object]&quot; or NaN (depending on context)
+</span></code></pre>
+<p>Wait, what? How can adding two empty arrays result in an empty string? And why does the order matter with objects?</p>
+<p>The answer lies in how JavaScript converts values during the addition operation:</p>
+<ul>
+<li>When using <code>+</code>, JavaScript tries to convert operands to primitives</li>
+<li>Arrays convert to strings by joining their elements</li>
+<li>Empty arrays become empty strings</li>
+<li>Objects convert to <code>"[object Object]"</code></li>
+</ul>
+<h2 id="the-infamous-0-1-0-2-0-3">The Infamous <code>0.1 + 0.2 !== 0.3</code><a class="zola-anchor" href="#the-infamous-0-1-0-2-0-3" aria-label="Anchor link for: the-infamous-0-1-0-2-0-3" style="visibility: hidden;"></a>
+</h2>
+<pre data-lang="javascript" style="background-color:#151515;color:#e8e8d3;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span style="color:#cf6a4c;">0.1 </span><span>+ </span><span style="color:#cf6a4c;">0.2 </span><span style="color:#888888;">// 0.30000000000000004
+</span><span style="color:#cf6a4c;">0.1 </span><span>+ </span><span style="color:#cf6a4c;">0.2 </span><span>=== </span><span style="color:#cf6a4c;">0.3 </span><span style="color:#888888;">// false
+</span></code></pre>
+<p>This isn't actually JavaScript's fault—it's how floating-point arithmetic works in binary. But it sure is confusing!</p>
+<h2 id="truthiness-gone-wrong">Truthiness Gone Wrong<a class="zola-anchor" href="#truthiness-gone-wrong" aria-label="Anchor link for: truthiness-gone-wrong" style="visibility: hidden;"></a>
+</h2>
+<pre data-lang="javascript" style="background-color:#151515;color:#e8e8d3;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span style="color:#556633;">&quot;&quot; </span><span>== false </span><span style="color:#888888;">// true
+</span><span style="color:#cf6a4c;">0 </span><span>== false </span><span style="color:#888888;">// true
+</span><span>[] == false </span><span style="color:#888888;">// true
+</span><span>[] == ![] </span><span style="color:#888888;">// true (this one is particularly mind-bending)
+</span></code></pre>
+<p>The last example is especially wild: an empty array equals its own negation!</p>
+<h2 id="the-typeof-null-anomaly">The <code>typeof null</code> Anomaly<a class="zola-anchor" href="#the-typeof-null-anomaly" aria-label="Anchor link for: the-typeof-null-anomaly" style="visibility: hidden;"></a>
+</h2>
+<pre data-lang="javascript" style="background-color:#151515;color:#e8e8d3;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span>typeof null </span><span style="color:#888888;">// &quot;object&quot;
+</span><span>typeof undefined </span><span style="color:#888888;">// &quot;undefined&quot;
+</span></code></pre>
+<p>This is actually a bug that became part of the specification. <code>null</code> should logically return <code>"null"</code>, but for historical reasons, it returns <code>"object"</code>.</p>
+<h2 id="converting-everything-to-numbers">Converting Everything to Numbers<a class="zola-anchor" href="#converting-everything-to-numbers" aria-label="Anchor link for: converting-everything-to-numbers" style="visibility: hidden;"></a>
+</h2>
+<pre data-lang="javascript" style="background-color:#151515;color:#e8e8d3;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span>+[] </span><span style="color:#888888;">// 0
+</span><span>+{} </span><span style="color:#888888;">// NaN
+</span><span>+</span><span style="color:#556633;">&quot;&quot; </span><span style="color:#888888;">// 0
+</span><span>+</span><span style="color:#556633;">&quot;</span><span style="color:#99ad6a;">hello</span><span style="color:#556633;">&quot; </span><span style="color:#888888;">// NaN
+</span><span>+true </span><span style="color:#888888;">// 1
+</span><span>+false </span><span style="color:#888888;">// 0
+</span></code></pre>
+<p>The unary <code>+</code> operator attempts to convert anything to a number, often with surprising results.</p>
+<hr />
+
+      </article>
+
+      
+      
+
+      
+      
+    </div>
+
+    
+
+
+<footer>
+  <div class="left">
+    <div class="copyright">
+      © 2025 WenVN
+      
+    </div>
+  </div>
+
+  <div class="right">
+    
+    
+    
+    
+
+    
+    
+    
+    <button id="theme-toggle" aria-label="theme switch">
+      <span class="moon-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M10 7C10 10.866 13.134 14 17 14C18.9584 14 20.729 13.1957 21.9995 11.8995C22 11.933 22 11.9665 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C12.0335 2 12.067 2 12.1005 2.00049C10.8043 3.27098 10 5.04157 10 7ZM4 12C4 16.4183 7.58172 20 12 20C15.0583 20 17.7158 18.2839 19.062 15.7621C18.3945 15.9187 17.7035 16 17 16C12.0294 16 8 11.9706 8 7C8 6.29648 8.08133 5.60547 8.2379 4.938C5.71611 6.28423 4 8.9417 4 12Z" fill="currentColor"></path></svg>
+</span>
+      <span class="sun-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z" fill="currentColor"></path></svg>
+</span>
+    </button>
+    
+  </div>
+</footer>
+
+
+
+
+
+  </main>
+</div>
+
+  
+<script src="/js/lightense.min.js"></script>
+
+
+  <script src="https://wenvn.github.io/js/main.js"></script>
+</body>
+
+</html>

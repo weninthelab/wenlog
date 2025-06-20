@@ -1,0 +1,100 @@
+/* Monokai Theme */
+.z-code {
+    background-color: #272822;
+    color: #f8f8f2;
+}
+
+.z-comment {
+    color: #75715e;
+}
+
+.z-keyword,
+.z-storage {
+    color: #f92672;
+}
+
+.z-constant {
+    color: #ae81ff;
+}
+
+.z-string,
+.z-meta-string {
+    color: #e6db74;
+}
+
+.z-variable {
+    color: #f8f8f2;
+}
+
+.z-entity.z-name.z-function {
+    color: #a6e22e;
+}
+
+.z-entity.z-name.z-tag {
+    color: #f92672;
+}
+
+.z-entity.z-other.z-attribute-name {
+    color: #66d9ef;
+}
+
+.z-invalid {
+    background-color: #f92672;
+    color: #ffffff;
+}
+
+.z-markup.z-heading {
+    color: #fd971f;
+    font-weight: bold;
+}
+
+/* Night Owl Theme */
+/* .z-code {
+    background-color: #011627;
+    color: #d6deeb;
+}
+
+.z-comment {
+    color: #637777;
+    font-style: italic;
+}
+
+.z-keyword,
+.z-storage {
+    color: #c792ea;
+}
+
+.z-constant {
+    color: #82aaff;
+}
+
+.z-string,
+.z-meta-string {
+    color: #ecc48d;
+}
+
+.z-variable {
+    color: #addb67;
+}
+
+.z-entity.z-name.z-function {
+    color: #82aaff;
+}
+
+.z-entity.z-name.z-tag {
+    color: #7fdbca;
+}
+
+.z-entity.z-other.z-attribute-name {
+    color: #80cbc4;
+}
+
+.z-invalid {
+    background-color: #ef5350;
+    color: #ffffff;
+}
+
+.z-markup.z-heading {
+    color: #c792ea;
+    font-weight: bold;
+} */
