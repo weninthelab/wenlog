@@ -1,6 +1,3 @@
-[variables]
-base_url = "https://weninthelab.github.io/wenlog/posts"
-
 [[collection]]
 type = "box"
 title = "JavaScript's Type Coercion Madness: When Numbers Become Strings and Logic Goes Wild"
