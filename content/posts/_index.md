@@ -13,7 +13,7 @@ lang = "en"
 title = "Posts"
 subtitle = "Half notes, half nonsense"
 
-date_format = "%h %-d, %Y"
+date_format = "%b %d, %Y"
 
 categorized = false # posts can be categorized
 back_to_top = true # show back-to-top button

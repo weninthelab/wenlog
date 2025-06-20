@@ -9,7 +9,7 @@ footer = false
 
 # If you don't want to display id/bio/avatar, simply comment out that line
 name = "WenVN"
-id = "wen"
+id = "Wen"
 bio = ""
 avatar = "img/y.ico"
 links = [
@@ -22,7 +22,7 @@ links = [
 recent = true
 recent_max = 3
 recent_more_text = "more »"
-date_format = "%-d %b, %Y"
+date_format = "%b %d, %Y"
 +++
 
 Hi there 👋  

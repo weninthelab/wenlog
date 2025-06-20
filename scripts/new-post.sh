@@ -20,7 +20,7 @@ fi
 
 cat <<EOF >"$POST_FILE"
 +++
-title = "$(echo "$SLUG" | sed -r 's/-/ /g' | sed -r 's/\b(.)/\u\1/g')"
+title = "$(echo "$SLUG" | sed -r 's/-/ /g' | sed -r 's/\b(.)/\u\1/g')" # Title minimum lenth: 35 characters
 description = "Description"
 date = $DATE
 draft = false
