@@ -1,5 +1,5 @@
 +++
-title = "JavaScript Closure Confusion and Memory Mysteries"
+title = "Closures & Memory Mysteries"
 description = "Dive deep into JavaScript closures and discover how they can create unexpected behavior and memory issues"
 date = 2025-06-07
 draft = false

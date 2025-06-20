@@ -1,5 +1,5 @@
 +++
-title = "JavaScript's Type Coercion Madness: When Numbers Become Strings and Logic Goes Wild"
+title = "JavaScript Type Coercion Madness"
 description = "Explore the bizarre world of JavaScript type coercion with mind-bending examples that will make you question everything you know about data types"
 date = 2025-06-02
 draft = false

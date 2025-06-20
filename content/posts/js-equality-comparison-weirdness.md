@@ -1,5 +1,5 @@
 +++
-title = "JavaScript Equality and Comparison Weirdness: When Equal Doesn't Mean Equal"
+title = "Equality & Comparison Weirdness"
 description = "Discover the bizarre world of JavaScript equality operators and comparison logic that can make experienced developers question reality"
 date = 2025-06-13
 draft = false

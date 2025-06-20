@@ -1,5 +1,5 @@
 +++
-title = "JavaScript Hoisting and the Temporal Dead Zone: When Variables Exist But Don't"
+title = "Hoisting & the Temporal Dead Zone"
 description = "Understand the confusing behavior of variable hoisting and why let/const variables can exist but be inaccessible"
 date = 2025-06-06
 draft = false

@@ -1,5 +1,5 @@
 +++
-title = "Markdown Tutorial"
+title = "Markdown Quick Tutorial"
 description = "A quick and simple guide to Markdown syntax"
 date = 2025-01-20
 draft = false

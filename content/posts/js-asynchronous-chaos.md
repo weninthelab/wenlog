@@ -1,5 +1,5 @@
 +++
-title = "JavaScript Asynchronous Chaos: When Order Becomes Disorder"
+title = "Asynchronous Chaos in JavaScript"
 description = "Navigate the confusing world of JavaScript's asynchronous behavior with examples of event loops, promises, and timing issues"
 date = 2025-06-11
 draft = false
