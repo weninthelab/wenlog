@@ -1,4 +1,4 @@
-{% macro back_link(path="javascript:void(0)") %}
+{% macro back_link(path="/") %}
 <header>
   <nav>
     <a href="#" onclick="if(document.referrer){history.back();}else{window.location.href='{{ path }}'}"
@@ -8,6 +8,7 @@
   </nav>
 </header>
 {% endmacro %}
+
 
 
 {% macro callout(name) %}
